@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PruebasFormula"
+    }
+  },
+  "defaultProject": "PruebasFormula",
+  "cli": {
+    "analytics": "5eda8a38-6cb7-4bb6-92e2-5f755d069aba"
+  }
 }

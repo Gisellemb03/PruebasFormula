@@ -22,4 +22,39 @@ describe('InterfaceComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render title', () => {
+    const fixture = TestBed.createComponent(InterfaceComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.col h1').textContent).toContain('Formula Energía');
+  });
+  it('should render inputText', () => {
+    const fixture = TestBed.createComponent(InterfaceComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.col input').placeholder).toContain('Ingrese la masa');
+  });
+  it('should render inputBottom ', () => {
+    const fixture = TestBed.createComponent(InterfaceComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.btn').value).toContain('Calcular Energía');
+  });
+  it('should render resultado ', () => {
+    const fixture = TestBed.createComponent(InterfaceComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.life-container').textContent).toContain('0');
+  });
+  it('should render descripcion ', () => {
+    const fixture = TestBed.createComponent(InterfaceComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.sn').textContent).toContain('Calculadora para obtener la Energía de un cuerpo. Energía = masa * velocidad de la luz (vl=299.792458 km/s)');
+  });
+
+
+
+
 });

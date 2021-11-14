@@ -1,4 +1,4 @@
-import { formulaEnergia} from './formula-energia';
+import { formulaEnergia} from './formulaEnergia';
 
 describe ('formulaEnergia', ()  => {
 

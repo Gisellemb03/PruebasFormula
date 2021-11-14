@@ -1,0 +1,30 @@
+<div fxLayout fxLayoutAlign="center center">
+<div class = "container color-dark">
+    <div class="col">
+        <h1 class="text-center">Formula Energía</h1>
+        <p>Giselle Mendoza Barradas <br>
+           Matricula s19004870
+
+        </p>
+    </div>
+</div>
+<div class = "container color-light "> 
+    <div class="col">
+        <p class="sn">Calculadora para obtener la Energía de un cuerpo. Energía = masa * velocidad de la luz(vl=299.792458 km/s)</p>
+        <form >
+            <input type="text" class="txt" name= "item" placeholder="Ingrese la masa" [(ngModel)]="masaText" required>
+            <input type="submit" class="btn" [value]="btnText" (click)= "calcular()">
+        </form>
+    </div>
+</div>
+<div class = "container color-light">
+    <div class="col">
+        <p>Resultado: </p>
+        <div class="col">
+            <p class="life-container" >
+                {{resultado}}
+            </p>
+        </div>
+    </div>
+</div>
+</div>
